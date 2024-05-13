@@ -2,6 +2,10 @@
 /* ❗ DO NOT CHANGE THIS FILE */
 /* ❗ DO NOT CHANGE THIS FILE */
 
+/*BUG TESTING
+
+console.log("data")
+
 const quotes = [
   {
     id: 23,
@@ -214,3 +218,12 @@ const people = [
 
 if (typeof module !== 'undefined' && module.exports)
   module.exports = { quotes, adverbs, nouns, verbs, people }
+
+
+
+
+/*BUG TESTING*/
+
+// BUG NOTES: While data.js is loading just fine, index.js can't seem to load properly because 'quotes' is already defined. 
+// I ended up copying the necessary objects over from data.js into index.js so that I could get the website to load the work properly.
+// NOTE TO SELF: Come back when I have more time to try and find a better solution.
